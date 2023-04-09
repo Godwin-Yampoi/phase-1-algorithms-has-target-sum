@@ -1,15 +1,21 @@
-function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
-
-/* 
-  Write the Big O time complexity of your function here
-*/
-
-/* 
-  Add your pseudocode here
-*/
-
+function hasTargetSum(arr, target):
+    let seen = {}
+    for num in arr:
+        if target - num in seen:
+            return true
+        seen[num] = true
+    return false
+    function hasTargetSum(arr, target) {
+      let seen = {};
+      for (let num of arr) {
+        if (target - num in seen) {
+          return true;
+        }
+        seen[num] = true;
+      }
+      return false;
+    }
+    
 /*
   Add written explanation of your solution here
 */
